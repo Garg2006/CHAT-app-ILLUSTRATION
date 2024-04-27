@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(270, 20%, 96%);
+  scroll-behavior: smooth;
+}
+
+.background-color-magenta {
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  width: 400px;
+  height: 80vh;
+  border-bottom-left-radius: 271px;
+  border-bottom-right-radius: 307px;
+  position:absolute;
+  left: -90px;
+  top:0;
+  z-index: 1;
+}
+
+.background-color-violet {
+  background: hsla(206, 7%, 79%, 0.171);
+  width: 400px;
+  height: 80vh;
+  border-bottom-left-radius: 271px;
+  border-bottom-right-radius: 307px;
+  position: fixed;
+  right: -90px;
+  bottom: 0;
+  transform: rotate(180deg);
+  overflow: hidden;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  z-index: 50;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.flex {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.flex-left {
+  /* width:100%; */
+  background-color: hsl(0, 0%, 100%);
+  padding: 8px;
+  border-radius: 30px;
+}
+
+.flex-right h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: hsl(271, 36%, 24%);
+}
+
+.flex-right p {
+  font-size: 16px;
+  color: hsl(270, 7%, 64%);
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  padding: 10px;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  padding-top: 20px;
+}
+
+.header .img {
+  width: 40px;
+}
+
+.header img {
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.header-flex {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 105px;
+}
+
+.header-flex h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-flex p {
+  font-size: 12px;
+  color: hsl(276, 100%, 81%);
+}
+
+.fa-ellipsis-vertical {
+  margin-left: 70px;
+  color: white;
+}
+
+.fa-angle-left {
+  color: white;
+}
+
+.header-box {
+  width: 50%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 20px;
+  background-color: white;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 81px;
+}
+
+.main {
+  background-color: hsl(270, 20%, 96%);
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.left-text {
+  max-width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 4px;
+  font-size: 12px;
+  color: hsl(276, 55%, 52%);
+  border-radius: 10px;
+  background-color: hsl(276, 23%, 91%);
+}
+
+.right-photos {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.right-photos .image {
+  width: 50px;
+}
+
+img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.right-text {
+  font-size: 12px;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-bottom-right-radius: 4px;
+}
+
+.right-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.left-choice {
+  display: flex;
+  gap: 10px;
+  max-width: 70%;
+  align-items: center;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 4px;
+}
+
+label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+label p {
+  font-size: 14px;
+}
+
+label h3 {
+  font-weight: 500;
+}
+
+input[type="radio"] {
+  outline: 1px solid hsl(289, 100%, 72%);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  position:relative
+}
+
+input {
+  flex-grow: 2;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+ 
+
+}
+
+::placeholder { 
+  color:hsl(206, 6%, 79%) 
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+background-color: hsl(271, 36%, 24%);
+color:white;
+position:absolute;
+padding:5px;
+right:4px;
+top:3px;
+border-radius:50%;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .flex {
+    flex-direction: column;
+  }
+  .flex-right {
+    max-width: 100%;
+  }
+  .background-color-magenta {
+    left: -150px;
+    position:absolute;
+    width:300px;
+  }
+  .background-color-violet{
+    width:200px;
+  }
+  .container{
+    width:90%;
+  }
+  
+
+  .container{
+  margin:50px auto;
+  }
+}
+
+
+@media only screen and (min-width:500px) and (max-width:1100px){
+  .container{
+    width:90%;
+  }
+}
